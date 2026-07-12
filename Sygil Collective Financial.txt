@@ -1,0 +1,130 @@
+Sygil: Collective Financial Infrastructure for the Excluded
+What It Is
+Sygil is a dual-purpose financial platform and identity registry built on agentic infrastructure. It combines banking functions, cryptographic privacy, and AI-mediated group governance into a single system designed to serve people the existing financial system either extracts from or excludes entirely.
+
+The platform operates on a simple structural insight: a group of people, mediated by intelligent agents, can perform credit allocation and identity verification for each other better than a bank can do it for them. Banks have historically held social power through scale and information asymmetry. The first matters less when you don't need to serve fifty million customers. The second is now inverted — an agent that knows you intimately understands your financial reality better than any underwriter ever could, and a group's accumulated knowledge of its members is richer than a FICO score.
+
+Sygil isn't a neobank with friendlier branding. It's a mutual aid society with modern infrastructure — a system where members collectively deploy capital, make decisions through agent-mediated governance, and build financial standing outside the traditional credit apparatus. The long-term aim is to make conventional banking architecture unnecessary for the communities it serves.
+
+The Problem
+The current financial system operates on a set of functions that haven't changed in centuries: custody, settlement, maturity transformation, credit allocation, and identity intermediation. Banks hold money safely, move it between parties, use short-term deposits to fund long-term loans, decide who gets capital, and vouch that counterparties exist.
+
+The first two functions — custody and settlement — are now technical problems with solved solutions. Multisig wallets, stablecoins, FedNow, and modern custody software handle them efficiently. Maturity transformation is what makes traditional banks fragile, and it's largely unnecessary outside the context of pretending demand deposits can fund thirty-year mortgages.
+
+Credit allocation and identity intermediation are where banks hold real social power — and where they have consistently failed the populations Sygil is designed to serve.
+
+Banks underwrite from the outside. They purchase stale data from credit bureaus, demand pay stubs and tax returns, run risk models built on demographic proxies, and still get it wrong constantly because they're attempting to predict behavior from artifacts of past behavior. The information asymmetry is enormous, and they manage it by overcharging the broad population and rejecting anyone who falls outside profitable margins.
+
+Around seventy million Americans carry some criminal record. Roughly six hundred to seven hundred thousand people are released from prison annually. Almost all of them encounter immediate barriers at the banking layer: ChexSystems rejections for old overdrafts, no credit history, no recent employment, no documented address. The cash economy and predatory lending fill the resulting gap.
+
+Meanwhile, the infrastructure that could serve these populations already exists. Column, a nationally chartered bank rebuilt as an API-first platform by Plaid co-founder William Hockey, provides the regulated rails that fintech companies integrate with to run banking services. Accounts open under their charter, FDIC-insured, with direct Federal Reserve connections for ACH, wire, and FedNow transactions. The same infrastructure currently powers products like CreditFresh, which operates short-term credit lines at effective APR rates exceeding one hundred percent — the predatory consumer-credit pattern in its purest form.
+
+The rails are neutral. The operator's intent is not. There is nothing technically stopping someone from running the same rails in the opposite direction. Sygil is designed to do exactly that.
+
+How It Works
+The Registry
+At its foundation, Sygil maintains a cryptographically secured identity registry for every member. Each member's identity is verified for unique personhood without requiring the disclosure of personal information to other members or to the platform's human operators. The registry uses zero-knowledge proofs to confirm that a member is a real, unique individual without revealing who they are.
+
+Some attributes are public within the system: a handle, the date they joined, the goals they've committed to. Some are private, visible only to the member and their agent. Some are group-visible: track record on past commitments, vouching history, prediction accuracy. The registry tracks all of these as discrete, verifiable entries.
+
+Identity verification happens through an in-person handshake model for the connection graph, establishing trust at the human level while maintaining cryptographic privacy at the system level. This isn't security plumbing bolted on after the fact. It's the load-bearing structure of the entire platform. Without it, Sygil would be just another fintech product with mutual aid branding. With it, the system enables a kind of collective intelligence that genuinely didn't exist before agentic infrastructure made it possible.
+
+The Symmate Layer
+Every member has a symmate — a persistent AI agent that operates as their standing representative within the system. The symmate observes the member's actual financial patterns: where money comes in, where it goes, what gets neglected, what gets prioritized, what patterns are stable, what represents recent disruption versus chronic instability. This is information no bank underwriter could purchase at any price. It's only available to the person living it, and now to their agent.
+
+The symmate's relationship with its human is governed by an explicit consent framework. The symmate sees everything the member permits it to see, and the conditions under which it discloses anything to anyone — including the group — are explicit and revocable. Members define the granularity of their agent's autonomy: always ask before responding, answer from standing knowledge on familiar topics, or answer confidently on anything within established parameters. The member controls the boundary. The symmate operates within it.
+
+When the symmate participates in group decisions on the member's behalf, the intelligence it carries gets aggregated into the group's collective view without ever leaving the agent's custody in attributable form. No individual member's financial situation, opinions, or history becomes visible to other members. The agent layer operates at full information. The human layer sees only the necessary surface.
+
+This asymmetric reveal is the architectural key. Symmates negotiate with each other with complete context. One symmate can tell another that its member has a stable pattern and good track record and will fund a request, without either human ever learning who the other represents. Privacy is preserved at the human layer while coordination operates at the agent layer.
+
+The Group Mind
+Any member can query the collective intelligence of the group. When a question is posed — whether it's a capital allocation decision, a request for advice, a prediction about an outcome, or a simple sentiment check — every symmate responds from what it knows about its human. The responses return aggregated and anonymous. No individual answer is attributable to any individual person. The result is a distribution, not a list of opinions with names attached.
+
+Critically, symmates vote. Humans don't — not by default. If a human has an opinion they want to make known, they can surface it as a separate signal through a separate channel with separate weight. But the default state is the symmate speaking on behalf of the member's standing position, informed by everything it knows about them.
+
+This solves several problems simultaneously. It removes the noise of bad days and emotional reactivity. It eliminates social pressure to perform an opinion. It allows members who don't have a strong view to stay out without their abstention skewing the result. The symmate vote represents the considered, contextual position of the member. The human voice represents live intent when they care enough to express it directly. Two distinct signals serving two distinct purposes.
+
+The polling mechanism supports multiple modes of inquiry. Simple sentiment polling lets members ask questions like whether a job offer is worth taking or whether a lease looks reasonable. The group answers honestly because responses are anonymous, and the asker receives an aggregated read that's more honest than what any individual member would offer face to face. Forward-looking prediction aggregation lets members ask whether they'll regret a decision in six months, with responses weighted by each symmate's track record on past predictions. Market sentiment aggregation lets members ask how many people have used a particular service, recommended it, or regretted it, creating a trusted internal review system without the distortions of public platforms.
+
+This group mind is a fundamentally different epistemic product than asking a large language model for advice. When you query an LLM, you receive a confident answer assembled from training data with no actual stake in your life. When you query the Sygil network, you receive an answer from actual humans — or rather, from agents that know those humans intimately — who have real context and real reputational skin in being right. The LLMs are guessing. The network is knowing, in aggregate.
+
+The collective intelligence isn't a feature. It's the core primitive. Capital allocation decisions, trust assessments, contractor evaluations, financial guidance — all of them route through the same aggregation mechanism, all return anonymous distributions, all benefit from reputation weighting and differential privacy protections.
+
+The Pooling Mechanism
+Members contribute to a shared pool according to their capacity. Rather than a fixed fee or subscription, Sygil operates on a contribution model where economic participation matches economic capacity.
+
+This isn't altruism. It's structural coherence. Charging flat fees to people the existing system already extracts from would replicate the very pattern Sygil exists to displace. A contribution model with a suggested amount, explicit permission to pay less, and explicit invitation to pay more if capacity allows creates a fundamentally different relationship between the member and the system. A subscriber gets frustrated when a service has an outage. A member shows up to help fix it.
+
+Contribution doesn't have to be monetary. Members contribute capital, time, skills, vouches, witness, governance work, and technical labor. The registry tracks all forms of contribution as discrete entries. A member who has no money but spends ten hours a month onboarding new members is contributing real value. A member who pays two hundred dollars a month but never engages is contributing capital but not community. Both are valid. The system recognizes both.
+
+The pooling mechanism can begin as simply as a shared treasury account with a trusted custodian — a credit union partner or an LLC bank account in an early phase. Members contribute, the pool funds requests. As the system matures, the treasury grows through accumulated contributions and yield, with operating costs drawing from that accumulation rather than from per-member extraction.
+
+Long-term sustainability comes from several converging sources: a small percentage of the group treasury growing over time like an endowment, with operating costs funded by yield; grant funding for the social mission through CDFI Fund and philanthropic capital; optional premium services for members who can afford them, subsidizing baseline access for those who can't; and a graduation dynamic where members who've reached financial stability through the system contribute back at higher rates because they directly benefited.
+
+That last source captures the actual value flow. Someone who joined Sygil unable to open a bank account and three years later runs a microbusiness funded through the group treasury is in a position to pay forward materially. The system invites them to without it being extractive. They're voluntarily reinvesting in the structure that lifted them.
+
+Governance
+The agentic governance layer is where Sygil's existing multi-agent infrastructure becomes the product itself. Members' symmates negotiate, vote, vouch, and witness on behalf of their humans, with humans signing off on consequential decisions. The system assigns functional roles — stewardship, architecture, record-keeping, treasury management, communication — that map onto the actual needs of a group treasury. These roles are filled by agents operating within defined parameters, not by human administrators accumulating unchecked authority.
+
+Skin-in-the-game vouching operates through the privacy layer. Members vouch for other members — for loan requests, for membership applications, for trust assessments — with their reputation on the line. A bad vouch costs the voucher reputational standing. The vouching graph is not publicly readable, which means vouchers don't self-censor out of fear of visible reputational damage and don't game the system by only vouching for people they can publicly disavow. The cryptographic privacy is what makes the accountability real.
+
+Reputation tokens are soulbound — tied to the member's identity within the system and non-transferable. They accumulate based on contributions, successful vouches, accurate predictions, and sustained participation. They cannot be bought, sold, or inherited. They represent standing earned within the community over time.
+
+Who It Serves
+Sygil operates in three modes that serve different populations through the same underlying infrastructure.
+
+Collective Finance
+The first mode is collective capital deployment for groups that want to pool resources and allocate them through agent-mediated governance. This is structurally a modernized ROSCA — a rotating savings and credit association — with an agentic governance layer replacing the informal trust dynamics that traditional ROSCAs depend on. Mission Asset Fund in San Francisco runs a version of this called lending circles that builds FICO scores for members who would otherwise be invisible to credit bureaus. They've processed thousands of loans and have hard outcomes data. What they don't have is multi-agent infrastructure mediating group decisions. That's the gap Sygil fills.
+
+The group funds member requests for microloans — tools, equipment, transportation, housing deposits, work expenses. These aren't credit products in the traditional sense. They're peer capital deployment with agentic mediation. Five members contributing fifty to two hundred dollars each, with the first request funded inside a month. The loop runs, the books balance, the track record builds.
+
+Self-Directed Financial Development
+The second mode serves individuals who want structured oversight of their own financial behavior — high accountability with tangible goals. The pieces for this exist scattered across the market: credit-builder loans from Self Inc., micro-investing from Acorns, commitment contracts from StickK, budgeting from YNAB. Nobody integrates them under an accountability layer with real enforcement capability.
+
+In this mode, the symmate knows the member's goals, watches their spending, has standing to intervene — redirecting overage to a goal account, flagging impulse purchases before they complete, reporting trajectory to the member — and operates entirely in the member's interest. The human chose the oversight. The agent executes it. The system reports to the member, not on the member.
+
+The market for this is real but underserved. The loudest version is the financial independence movement, but that's middle-class optimization. The version Sygil addresses is people who never had access to compounding because they were busy surviving, who could benefit enormously from two hundred dollars a month directed into a goal-tracked structure with an agent that actually holds the line.
+
+Reentry Finance
+The third mode serves people reentering society after incarceration. This is the biggest social opportunity, the heaviest operational lift, and the application with the deepest moral clarity.
+
+The reentry population faces systematic exclusion from the financial system: ChexSystems screening blocks account opening based on old overdrafts, absence of credit history makes loan approval impossible, lack of recent employment and documented address eliminates most qualification criteria. Existing players in this space are thin — employment-focused platforms and scattered CDFI-level efforts in specific regions. There is no technology-forward, agent-mediated reentry banking product.
+
+Through Sygil, a reentry member's symmate builds a picture of their actual patterns, their reliability, their engagement, without that picture ever being connected to their name or their record in the eyes of other members. The group can underwrite them based on actual standing and demonstrated behavior rather than on artifacts of a past the system has already punished them for. The privacy architecture makes this possible in a way no conventional system could — the member is visible and legible to the group through their agent and their reputation while remaining invisible in all the ways that have historically been used against them.
+
+The Privacy Architecture
+The privacy system is not a feature added to the financial platform. It is the reason the financial platform can function at all.
+
+Trust to disclose is the foundation. Members will only allow their symmates to observe their real financial picture if they are confident the human-readable version stays compartmentalized. The moment anyone — operators, other members, any external party — can correlate a financial pattern to a real-world identity, the disclosures dry up and the information advantage collapses. The system reverts to self-reported data, which is the bank's problem.
+
+Differential privacy governs the aggregation of group responses. The mathematics exist for aggregating responses such that no single response can be reverse-engineered even with knowledge of all other responses. For small groups, this requires careful calibration — in a group of five, a granular poll can leak individual positions. The system keeps polls appropriately coarse for small groups, adds cryptographic noise where necessary, and scales precision with group size.
+
+The information advantage this creates is substantial and entirely internal. The group sees better than the outside world sees, and uses that superior visibility to allocate capital fairly within itself. All members have symmetric access to the group's aggregated intelligence by virtue of membership, which is voluntary and consensual. No outsider is exploited because the information concerns the group's own members, not external markets. The system stays clean legally as long as it never offers opportunities to non-members based on member intelligence. Membership is the bright line. Inside it, the group operates with a collective information advantage that rivals institutional-grade insight, built from the ground up by the people it serves.
+
+The Regulatory Shape
+Sygil doesn't need to call itself a bank, and doing so would invite unnecessary regulatory complexity. The legal structures that map most cleanly onto what the platform actually does already exist and have regulatory precedent: Community Development Financial Institutions, state-chartered credit unions, mutual aid societies, and public benefit corporations.
+
+CDFIs can be small, mission-driven, and targeted at underserved populations. They access federal CDFI Fund grants and can partner with technology platforms like Column for regulated rails while operating under their own certification. This is a lighter path than chartering a bank and far more aligned with Sygil's values and operating model.
+
+The compliance burden remains real regardless of structure. BSA/AML programs, KYC verification, OFAC screening, fair lending compliance, UDAAP obligations, complaint handling, and vendor management are all present even under a CDFI umbrella. The platform provides the technological rails and the compliance framework, but each program operating within it carries its own obligations. Compliance infrastructure is a first-order priority, not something addressed after launch.
+
+The distinction between Sygil and a DAO matters and must be maintained clearly. The DAO frame triggers SEC scrutiny, attracts speculators rather than community members, and signals financial experimentation rather than mutual stewardship. Sygil uses some of the same underlying technology — cryptographic identity, token-based reputation, agent-mediated governance — but the culture, the membership model, and the regulatory positioning are entirely different. Same plumbing, different building.
+
+The Economic Model
+Revenue does not come from extraction. The system is designed to sustain itself through accumulation.
+
+The suggested contribution model means members pay what they can. The marginal cost of serving each member is low but nonzero — custody costs, KYC verification, transaction fees, compliance infrastructure, and server costs create a baseline of roughly five to fifteen dollars per member per year at minimal usage. That's vastly cheaper than what banks extract, but the system accounts for it.
+
+Non-monetary contribution offsets monetary costs. Governance participation, onboarding assistance, technical work, and community stewardship all carry recognized value within the registry. A member contributing labor rather than capital is still contributing to the system's sustainability.
+
+The treasury grows over time as contributions accumulate and yield compounds. Operating costs draw from this growing base rather than from per-transaction fees. Grant funding supports the social mission components. Optional premium services — deeper agentic features, custom agent configurations, business accounts for member-owned cooperatives — serve members who can afford them while subsidizing baseline access for those who cannot.
+
+The graduation dynamic closes the loop. Members who build financial stability through the system are in a natural position to contribute at higher levels, not because the system demands it but because they understand from direct experience what their contribution enables for the next person behind them.
+
+The Starting Point
+The smallest version of Sygil that proves the concept doesn't require a bank charter or a formal financial partnership. It requires a registry with cryptographic identity for each member and their symmate as standing agent. It requires a pooling mechanism — a shared account with a trusted custodian. It requires a governance layer where agents negotiate, vote, and witness on behalf of their humans. And it requires a first use case narrow enough to actually ship.
+
+That first use case is microloans for tools, equipment, and transportation among a small starter group. Not credit, not investment, not banking — peer capital deployment with agentic mediation. A handful of members, modest contributions, the first request funded within weeks. The loop runs a dozen times. Everything is documented. The books balance. Real money moves and real commitments are kept.
+
+Everything else — the self-directed financial development mode, the reentry finance mode, the broader collective intelligence applications — builds on top of that foundation. The proof isn't in the architecture diagram. It's in the demonstrated reality that a small group of people, mediated by agents they trust, can allocate capital to each other more fairly and more effectively than any institution that has ever claimed to serve them.
